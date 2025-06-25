@@ -1,0 +1,35 @@
+{
+  "manifest_version": 2,
+  "name": "Twitch 1080p",
+  "version": "1.0",
+  "description": "Перенаправляет запросы к usher.ttvnw.net через прокси-сервер для разблокировки 1080p на Twitch.",
+  "permissions": [
+    "proxy",
+    "storage",
+    "webRequest",
+    "webRequestBlocking",
+    "<all_urls>"
+  ],
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "{d3f2b8e1-3f5a-4c2b-9e7a-8b4c5d6e7f8a}",
+      "strict_min_version": "91.0"
+    }
+  }
+}
